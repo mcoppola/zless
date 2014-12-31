@@ -1199,7 +1199,7 @@ section:nth-of-type(13):hover ~ .layers > .p-group > .layer > .outer > .box {
 }
 section:nth-of-type(14):hover ~ .layers > .p-group > .layer > .outer > .box {
   left: 0;
-  top: 0;
+  top: 35.714285714285715px;
   transform: rotateY(-3.7037037deg) rotateX(-14.28571429deg);
 }
 section:nth-of-type(15):hover ~ .layers > .p-group > .layer > .outer > .box {
@@ -1334,7 +1334,7 @@ section:nth-of-type(40):hover ~ .layers > .p-group > .layer > .outer > .box {
 }
 section:nth-of-type(41):hover ~ .layers > .p-group > .layer > .outer > .box {
   left: 0;
-  top: 0;
+  top: 21.42857142857143px;
   transform: rotateY(-3.7037037deg) rotateX(-8.57142857deg);
 }
 section:nth-of-type(42):hover ~ .layers > .p-group > .layer > .outer > .box {
@@ -1469,7 +1469,7 @@ section:nth-of-type(67):hover ~ .layers > .p-group > .layer > .outer > .box {
 }
 section:nth-of-type(68):hover ~ .layers > .p-group > .layer > .outer > .box {
   left: 0;
-  top: 0;
+  top: 7.142857142857146px;
   transform: rotateY(-3.7037037deg) rotateX(-2.85714286deg);
 }
 section:nth-of-type(69):hover ~ .layers > .p-group > .layer > .outer > .box {
@@ -1604,7 +1604,7 @@ section:nth-of-type(94):hover ~ .layers > .p-group > .layer > .outer > .box {
 }
 section:nth-of-type(95):hover ~ .layers > .p-group > .layer > .outer > .box {
   left: 0;
-  top: 0;
+  top: -7.14285714px;
   transform: rotateY(-3.7037037deg) rotateX(2.85714286deg);
 }
 section:nth-of-type(96):hover ~ .layers > .p-group > .layer > .outer > .box {
@@ -1739,7 +1739,7 @@ section:nth-of-type(121):hover ~ .layers > .p-group > .layer > .outer > .box {
 }
 section:nth-of-type(122):hover ~ .layers > .p-group > .layer > .outer > .box {
   left: 0;
-  top: 0;
+  top: -21.42857143px;
   transform: rotateY(-3.7037037deg) rotateX(8.57142857deg);
 }
 section:nth-of-type(123):hover ~ .layers > .p-group > .layer > .outer > .box {
@@ -1874,7 +1874,7 @@ section:nth-of-type(148):hover ~ .layers > .p-group > .layer > .outer > .box {
 }
 section:nth-of-type(149):hover ~ .layers > .p-group > .layer > .outer > .box {
   left: 0;
-  top: 0;
+  top: -35.71428571px;
   transform: rotateY(-3.7037037deg) rotateX(14.28571429deg);
 }
 section:nth-of-type(150):hover ~ .layers > .p-group > .layer > .outer > .box {
@@ -2009,7 +2009,7 @@ section:nth-of-type(175):hover ~ .layers > .p-group > .layer > .outer > .box {
 }
 section:nth-of-type(176):hover ~ .layers > .p-group > .layer > .outer > .box {
   left: 0;
-  top: 0;
+  top: -50px;
   transform: rotateY(-3.7037037deg) rotateX(20deg);
 }
 section:nth-of-type(177):hover ~ .layers > .p-group > .layer > .outer > .box {

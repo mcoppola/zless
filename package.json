@@ -1,0 +1,16 @@
+{
+  "name": "zCss",
+  "version": "0.0.1",
+  "private": true,
+  "repository": "https://github.com/mcoppola/zcss.git",
+  "dependencies": {
+    "express": "3.4.8",
+    "mu2": "0.5.x",
+    "less": "x",
+    "less-middleware": "*",
+    "optimist": ">= 0.0.1"
+    },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

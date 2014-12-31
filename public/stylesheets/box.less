@@ -1,0 +1,92 @@
+.box
+{
+  position: relative;
+  width: 200px;
+  height: 200px;
+
+  margin: 0 auto;
+
+  -webkit-transform-style: preserve-3d;
+
+}
+.side
+ {
+ 	position: absolute;
+ 	display: block;
+	width: 100%;
+	height: 100%;
+
+	background-color: #60c2ef;
+	opacity: 0.5;
+	border: 1px solid #000;
+
+	-webkit-transform-origin: 50% 50% 0;
+    -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 0.1)));
+
+
+	&.front
+	{
+		-webkit-transform: translateZ(100px); 
+		-webkit-animation: frontShading1 10s infinite linear;
+	}
+
+	&.back
+	{
+		transform: rotateY(180deg) translateZ(100px);
+	}
+
+	&.left
+	{
+		transform: rotateY(-90deg) translateZ(100px) ;
+		-webkit-transform: rotateY(-90deg) translateZ(100px);
+	}
+	&.right
+	{
+		transform: rotateY(90deg) translateZ(100px); 
+		-webkit-transform: rotateY(90deg) translateZ(100px); 
+	}
+	&.top { -webkit-transform: rotateX(90deg) translateZ(100px); }
+	&.bottom { -webkit-transform: rotateX(-90deg) translateZ(100px); }
+}
+
+
+.side:before, .side:after {
+  content: ""; display: block; position: absolute;
+  width: 100%; height: 100%; opacity: 1;
+}
+.side:before {
+  background: -webkit-radial-gradient(top left, rgba(0, 0, 0, 0.1), #dfdfdf);
+}
+.side:after {
+  background: -webkit-radial-gradient(top right, rgba(0, 0, 0, 0.1), #000000);
+}
+
+.front:before { -webkit-animation: frontShading1 10s infinite linear; }
+
+@-webkit-keyframes frontShading1 {
+  2% { opacity: 0; }
+  25% { opacity: 0.8; }
+  35% { opacity: 0.8; }
+  50% { opacity: 0; }
+}
+
+.top:after {
+  opacity: 0.5; width: 100%; height: 100%;
+  //margin-left: -50%; margin-top: -50%;
+  background: -webkit-radial-gradient(bottom, rgba(0, 0, 0, 0.5), #000000);
+  -webkit-animation: rotateTop 10s infinite linear;
+}
+
+.bottom {
+  //-webkit-box-shadow: 0 10px 100px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+.box-inner
+{
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	opacity: 0.2;
+}

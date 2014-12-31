@@ -1,0 +1,76 @@
+body
+{
+	margin: 0;
+	background-color: #dfdfdf;
+}
+
+
+.layers {
+  //perspective: 1px; 
+  height: 100vh;
+  // min-width: 400px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  color: #000;
+  text-align: center;
+  // transform: rotateY(0deg) rotateZ(0deg);
+  //transform: rotateY(0deg) rotateZ(0deg);
+
+  // -webkit-transition: transform .15s linear;
+  // transition: transform .15s linear;
+
+
+
+
+}
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  // transform: rotateY(0deg) rotateX(0deg);
+
+  -webkit-perspective : 1500px;
+  -moz-perspective    : 1500px;
+  -o-perspective      : 1500px;
+  -ms-perspective     : 1500px;
+  perspective         : 1500px;
+
+  -webkit-perspective-origin  : 50% 50%;
+  -moz-perspective-origin     : 50% 50%;
+  -moz-transform-origin       : 50% 50%;
+  -o-perspective-origin       : 50% 50%;
+  -ms-perspective-origin      : 50% 50%;
+  perspective-origin          : 50% 50%;
+  //transform: translateZ(-2px) scale(1);
+
+  // -webkit-transition:left .15s linear, right .15s linear, top .15s linear, bottom .15s linear;
+  // transition:left .15s linear, right .15s linear, top .15s linear, bottom .15s linear;
+}
+
+.layer--base 
+{
+  transform: translateZ(-1px) scale(1);
+}
+.layer--back 
+{
+  transform: translateZ(-2px) scale(1);
+} 
+.layer--deep 
+{
+  transform: translateZ(-3px) scale(.5);
+}
+
+
+.outer
+{
+	position: relative;
+	width: 100%;
+	top: 30vh;
+}
+
+

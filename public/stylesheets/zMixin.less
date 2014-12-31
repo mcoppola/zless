@@ -1,0 +1,62 @@
+
+.setNth(@selector, @property, @value, @n:10) when (@n > 0) 
+{
+  &:nth-of-type(@{n}) 
+  {        
+    @{selector} {  @{property}: ~'calc('@n ~'*'@value~')'; }
+  }
+  .setNth(@selector, @property, @value, @n - 1);
+}
+
+.setNthVar(@selector, @property, @value, @n:10, @i:1) when (@n > 0) 
+{
+  &:nth-of-type(@{n*i}) 
+  {        
+    @{selector} {  @{property}: ~'calc('@n ~'*'@value~')'; }
+  }
+  .setNth(@selector, @property, @value, @n - 1);
+}
+
+
+.makeDepth() {
+
+
+}
+
+
+
+
+
+.setSectionTop(@h, @w, @n) when (@n > 0) 
+{
+	&:nth-of-type(@{n}) 
+	{
+		top: @n
+	}
+}
+
+section.a11{top:0;left:0}
+section.a12{top:0;left:5%;}
+section.a13{top:0;left:10%;}
+section.a14{top:0;left:15%;}
+section.a15{top:0;left:20%;}
+section.a16{top:0;left:25%;}
+section.a17{top:0;left:30%;}
+section.a18{top:0;left:35%;}
+section.a19{top:0;left:40%;}
+section.a110{top:0;left:45%;width: 10%;}
+section.a111{top:0%;right:40%}
+section.a112{top:0%;right:35%;}
+section.a113{top:0%;right:30%;}
+section.a114{top:0%;right:25%;}
+section.a115{top:0%;right:20%;}
+section.a116{top:0%;right:15%;}
+section.a117{top:0%;right:10%;}
+section.a118{top:0%;right:5%;}
+section.a119{top:0%;right:0%;}
+
+section.a21{top:11%;left:0}
+section.a22{top:11%;left:5%;}
+section.a23{top:11%;left:10%;}
+section.a24{top:11%;left:15%;}
+section.a25{top:11%;left:20%;}

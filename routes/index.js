@@ -6,14 +6,14 @@ module.exports = function (app) {
 
 var index = function (req, res) {
 	var s = '';
-	
+
 	for (i=0; i<(zcss.resWidth*zcss.resHeight); i++) {
 		s += '<section></section>'
 	}
 
     res.render('index', { 
 
-    	title: 'transforms',
+    	title: 'MUSEY | LAND',
     	sections: function() {
     		return s
     	}

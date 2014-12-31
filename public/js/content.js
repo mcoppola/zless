@@ -1,10 +1,11 @@
 $(function(){
 
-	// $('section').hover(function(e){
-	// 	$(this).addClass('active');
-	// }, function(){
-	// 	$(this).removeClass('active');
-	// });
+	$('section').addClass('hide');
+
+	$('.front').click(function(e){
+		$('section').removeClass('hide');
+		$('.enter').html('hello  :)');
+	});
 
 
 });

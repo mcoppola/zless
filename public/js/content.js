@@ -6,6 +6,4 @@ $(function(){
 		$('section').removeClass('hide');
 		$('.enter').html('hello  :)');
 	});
-
-
 });
